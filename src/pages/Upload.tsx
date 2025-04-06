@@ -7,7 +7,7 @@ import Layout from "@/components/layout/Layout";
 import FileUpload from "@/components/upload/FileUpload";
 import ProgressTracker, { Step } from "@/components/upload/ProgressTracker";
 import { processFiles } from "@/services/mockData";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
 import { Loader2 } from "lucide-react";
 
 const uploadSteps: Step[] = [

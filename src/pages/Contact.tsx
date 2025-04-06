@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/layout/Layout";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
 import { Mail, MessageSquare, Phone, MapPin, Send } from "lucide-react";
 
 const Contact = () => {

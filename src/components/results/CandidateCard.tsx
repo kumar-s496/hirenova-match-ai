@@ -3,7 +3,8 @@ import { useState } from "react";
 import { CheckCircle, AlertCircle, ChevronDown, ChevronUp, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
+import { cn } from "@/lib/utils";
 
 export interface Skill {
   name: string;
@@ -76,7 +77,8 @@ const CandidateCard = ({ candidate, onShortlist, isShortlisted }: CandidateCardP
           <Progress 
             value={candidate.matchScore} 
             className="h-2"
-            indicatorClassName={getMatchScoreProgressColor(candidate.matchScore)}
+            // Fixed: Use className with cn utility to apply the background color
+            className={cn("h-2", getMatchScoreProgressColor(candidate.matchScore))}
           />
         </div>
 

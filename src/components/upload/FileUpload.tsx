@@ -1,8 +1,7 @@
-
 import { useState, useRef } from "react";
 import { Upload, X, FileText, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
 
 interface FileUploadProps {
   label: string;

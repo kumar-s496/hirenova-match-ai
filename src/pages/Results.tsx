@@ -8,7 +8,7 @@ import Layout from "@/components/layout/Layout";
 import JobSummaryCard from "@/components/results/JobSummary";
 import CandidateCard, { Candidate } from "@/components/results/CandidateCard";
 import { getMockJobData, getMockCandidates } from "@/services/mockData";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
 import { Search, ArrowUp, ArrowDown, Users, Filter } from "lucide-react";
 import {
   Select,

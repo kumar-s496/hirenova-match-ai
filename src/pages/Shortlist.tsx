@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/layout/Layout";
 import { getMockCandidates } from "@/services/mockData";
 import { Candidate } from "@/components/results/CandidateCard";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
 import { Calendar, Clock, Users, ArrowLeft, Check } from "lucide-react";
 import {
   Dialog,
